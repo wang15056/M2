@@ -1,0 +1,31 @@
+===============================================================================
+QUICK REFERENCE: Location of 'decompose' Function in Macaulay2
+===============================================================================
+
+DECLARATION:
+  File: M2/Macaulay2/m2/shared.m2
+  Line: 19
+  Code: decompose = method(Options => true)
+
+IMPLEMENTATION (for Ideal type):
+  File: M2/Macaulay2/packages/MinimalPrimes.m2
+  Line: 195
+  Code: decompose Ideal := List => options minimalPrimes >> opts -> I -> 
+            minprimesHelper(I, (minimalPrimes, Ideal), opts)
+
+HELPER FUNCTION (minprimesHelper):
+  File: M2/Macaulay2/packages/MinimalPrimes.m2
+  Lines: 219-246
+
+ALGORITHMS:
+  File: M2/Macaulay2/packages/MinimalPrimes.m2
+  Lines: 259-314
+  Strategies: "Legacy", "NoBirational", "Birational", Hybrid, Monomial
+
+DOCUMENTATION:
+  File: M2/Macaulay2/packages/Macaulay2Doc/shared.m2
+  Line: 22
+
+===============================================================================
+For complete details, see: decompose-function-location.md
+===============================================================================
